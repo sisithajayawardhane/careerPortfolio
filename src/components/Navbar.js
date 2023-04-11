@@ -35,25 +35,20 @@ export default function Navbar(props) {
 
     const drawer = (
         <div className='sidenav'>
-            <Toolbar>
-                <Typography >
-                    Sisitha
-                </Typography>
-            </Toolbar>
             <Toolbar />
             <Divider />
             <List>
+                <Link to = "/profile" className='list-item-text'>
                 <ListItem disablePadding>
                     <ListItemButton>
                         <ListItemIcon>
                             <AccountCircleIcon sx={{ color: 'blue' }} />
                         </ListItemIcon>
-                        {/* <ListItemText primary={"Profile"} /> */}
-                        <Link to={{ pathname: "/profile" }}>
-                            Profile
-                        </Link>
+                        <ListItemText primary={"Profile"} className='list-item-text'/>
                     </ListItemButton>
                 </ListItem>
+                </Link>
+                
                 <ListItem disablePadding>
                     <ListItemButton>
                         <ListItemIcon>

@@ -5,6 +5,7 @@
     text-align: left;
 }
 
-.sub-profile-typography {
-    
+.list-item-text {
+    text-decoration: none;
+    color: black;
 }
