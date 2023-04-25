@@ -12,7 +12,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+//import Typography from '@mui/material/Typography';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PieChartIcon from '@mui/icons-material/PieChart';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
@@ -38,62 +38,77 @@ export default function Navbar(props) {
             <Toolbar />
             <Divider />
             <List>
-                <Link to = "/profile" className='list-item-text'>
-                <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <AccountCircleIcon sx={{ color: 'blue' }} />
-                        </ListItemIcon>
-                        <ListItemText primary={"Profile"} className='list-item-text'/>
-                    </ListItemButton>
-                </ListItem>
+                <Link to="/profile" className='list-item-text'>
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <AccountCircleIcon sx={{ color: 'blue' }} />
+                            </ListItemIcon>
+                            <ListItemText primary={"Profile"} className='list-item-text' />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+
+                <Link to="/highlights" className='list-item-text'>
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <PieChartIcon sx={{ color: 'red' }} />
+                            </ListItemIcon>
+                            <ListItemText primary={"Highlights"} />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+
+                <Link to="/education" className='list-item-text'>
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <AutoStoriesIcon sx={{ color: 'green' }} />
+                            </ListItemIcon>
+                            <ListItemText primary={"Education"} />
+                        </ListItemButton>
+                    </ListItem>
                 </Link>
                 
-                <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <PieChartIcon sx={{ color: 'red' }} />
-                        </ListItemIcon>
-                        <ListItemText primary={"Highlights"} />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <AutoStoriesIcon sx={{ color: 'green' }} />
-                        </ListItemIcon>
-                        <ListItemText primary={"Education"} />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <BusinessCenterIcon sx={{ color: 'orange' }} />
-                        </ListItemIcon>
-                        <ListItemText primary={"Experience"} />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <ListAltIcon sx={{ color: 'blue' }} />
-                        </ListItemIcon>
-                        <ListItemText primary={"Portfolio"} />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <SendIcon sx={{ color: 'red' }} />
-                        </ListItemIcon>
-                        <ListItemText primary={"Contact"} />
-                    </ListItemButton>
-                </ListItem>
+                <Link to="/experience" className='list-item-text'>
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <BusinessCenterIcon sx={{ color: 'orange' }} />
+                            </ListItemIcon>
+                            <ListItemText primary={"Experience"} />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+
+                <Link to="/portfolio" className='list-item-text'>
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <ListAltIcon sx={{ color: 'blue' }} />
+                            </ListItemIcon>
+                            <ListItemText primary={"Portfolio"} />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+
+                <Link to="/contact" className='list-item-text'>
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <SendIcon sx={{ color: 'red' }} />
+                            </ListItemIcon>
+                            <ListItemText primary={"Contact"} />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+
             </List>
             <Divider />
             <List>
                 <ListItem disablePadding>
-                    <ListItemButton>
+                    <ListItemButton href='https://sisithajayawardhane.medium.com'>
                         <ListItemIcon>
                             <RocketLaunchIcon sx={{ color: 'gray' }} />
                         </ListItemIcon>
