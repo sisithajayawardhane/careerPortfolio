@@ -1,4 +1,13 @@
 .typography {
     padding: 15px 0 0 15px;
 }
+.navbar_pages_text {
+    color: white;
+}
+.navbar_pages_text:hover {
+    color: gray;
+}
+.list {
+    background-color: black;
+}
 
