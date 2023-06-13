@@ -1,13 +1,33 @@
 .typography {
     padding: 15px 0 0 15px;
 }
+
 .navbar_pages_text {
     color: white;
 }
+
+.list-item-text {
+    padding-bottom: 500px;
+}
+
 .navbar_pages_text:hover {
     color: gray;
 }
-.list {
+
+.tool_bar {
     background-color: black;
 }
 
+.list {
+    background-color: black;
+}
+#linkedin_button {
+    padding-bottom: 300px;
+}
+#profile_button {
+    padding-top: 50px;
+}
+#se_img {
+    padding-top: 20px;
+    width: 80%;
+}

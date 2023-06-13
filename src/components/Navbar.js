@@ -35,11 +35,13 @@ export default function Navbar(props) {
 
     const drawer = (
         <div className='sidenav'>
-            <Toolbar />
-            <Divider />
+            <div className='tool_bar'>
+                <img src="se2.png" alt="SE" id='se_img'/>
+            </div>
+            {/* <Divider /> */}
             <List className='list'>
-                <Link to="/profile" className='list-item-text'>
-                    <ListItem disablePadding>
+                <Link to="/profile" className='list-item-text' >
+                    <ListItem id='profile_button'>
                         <ListItemButton>
                             <ListItemIcon>
                                 <AccountCircleIcon sx={{ color: 'blue' }} />
@@ -50,7 +52,7 @@ export default function Navbar(props) {
                 </Link>
 
                 <Link to="/highlights" className='list-item-text'>
-                    <ListItem disablePadding>
+                    <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
                                 <PieChartIcon sx={{ color: 'red' }} />
@@ -61,7 +63,7 @@ export default function Navbar(props) {
                 </Link>
 
                 <Link to="/education" className='list-item-text'>
-                    <ListItem disablePadding>
+                    <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
                                 <AutoStoriesIcon sx={{ color: 'green' }} />
@@ -72,7 +74,7 @@ export default function Navbar(props) {
                 </Link>
 
                 <Link to="/experience" className='list-item-text'>
-                    <ListItem disablePadding>
+                    <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
                                 <BusinessCenterIcon sx={{ color: 'orange' }} />
@@ -83,7 +85,7 @@ export default function Navbar(props) {
                 </Link>
 
                 <Link to="/portfolio" className='list-item-text'>
-                    <ListItem disablePadding>
+                    <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
                                 <ListAltIcon sx={{ color: 'blue' }} />
@@ -94,7 +96,7 @@ export default function Navbar(props) {
                 </Link>
 
                 <Link to="/contact" className='list-item-text'>
-                    <ListItem disablePadding>
+                    <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
                                 <SendIcon sx={{ color: 'red' }} />
@@ -105,17 +107,17 @@ export default function Navbar(props) {
                 </Link>
 
             </List>
-            <Divider />
+            {/* <Divider /> */}
             <List className='list'>
-                <ListItem disablePadding>
+                <ListItem >
                     <ListItemButton href='https://sisithajayawardhane.medium.com' >
                         <ListItemIcon>
                             <RocketLaunchIcon sx={{ color: 'gray' }} />
                         </ListItemIcon>
-                        <ListItemText primary={"Blog"} className='navbar_pages_text'/>
+                        <ListItemText primary={"Blog"} className='navbar_pages_text' />
                     </ListItemButton>
                 </ListItem>
-                <ListItem disablePadding>
+                <ListItem id='linkedin_button'>
                     <ListItemButton href='https://www.linkedin.com/in/sisitha-jayawardhane-0b5a1517b/'>
                         <ListItemIcon>
                             <LinkedInIcon sx={{ color: 'blue' }} />
@@ -131,7 +133,7 @@ export default function Navbar(props) {
 
     return (
         <div className='Navbar'>
-            <Box sx={{ display: 'flex'}} >
+            <Box sx={{ display: 'flex' }} >
                 <Toolbar>
                     <IconButton
                         color="inherit"
