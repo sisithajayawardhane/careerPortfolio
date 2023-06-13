@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from "react-router-dom";
 import "../css/navbar.css"
 import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
@@ -36,9 +35,8 @@ export default function Navbar(props) {
     const drawer = (
         <div className='sidenav'>
             <div className='tool_bar'>
-                <img src="se2.png" alt="SE" id='se_img'/>
+                <img src="sj.png" alt="SE" id='se_img'/>
             </div>
-            {/* <Divider /> */}
             <List className='list'>
                 <Link to="/profile" className='list-item-text' >
                     <ListItem id='profile_button'>
