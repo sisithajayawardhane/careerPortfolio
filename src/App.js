@@ -5,7 +5,7 @@ import Profile from './components/Profile';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Highlights from './components/Highlights';
-import Education from './components/Education'
+import Education from './components/Education';
 import Contact from './components/Contact'
 
 function App() {
