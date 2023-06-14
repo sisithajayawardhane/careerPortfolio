@@ -38,7 +38,7 @@ export default function Navbar(props) {
                 <img src="sj.png" alt="SE" id='se_img'/>
             </div>
             <List className='list'>
-                <Link to="/profile" className='list-item-text' >
+                <Link to="/" className='list-item-text' >
                     <ListItem id='profile_button'>
                         <ListItemButton>
                             <ListItemIcon>
