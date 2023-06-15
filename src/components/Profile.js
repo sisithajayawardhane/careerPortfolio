@@ -80,11 +80,11 @@ export default function Profile() {
                         <div className='details_div'>
                             <div className='details'>
                                 <h4>Favourite Languages</h4>
-                                <p className='capsule_para'>JavaScript, C#, Swift</p>
+                                <p className='capsule_para'>JavaScript, Swift</p>
                             </div>
                             <div className='details'>
                                 <h4>Favourite IDEs</h4>
-                                <p className='capsule_para'>Visual Studio code, Visual Studio, Xcode</p>
+                                <p className='capsule_para'>VScode, Xcode, Visual Studio</p>
                             </div>
                             <div className='details'>
                                 <h4>Career Goal</h4>
@@ -92,7 +92,7 @@ export default function Profile() {
                             </div>
                             <div className='details'>
                                 <h4>Current Learning Goals</h4>
-                                <p className='capsule_para'>AWS, Jenkings, TypeScript</p>
+                                <p className='capsule_para'>AWS, Jenkings, TypeScript, C#, ASP.NET</p>
                             </div>
                         </div>
 
