@@ -8,15 +8,14 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 
 export default function Profile() {
-
     return (
-        <div className='Profile'>
-            <div className='first-row'>
-                <div className='basic-details'>
-                    <Typography variant='h3' fontWeight='bold' className='sub-profile-typography'>
+        <div className='Profile' >
+            <div class="flex flex-row justify-between p-2 mt-0 mr-8 mb-0 ml-8">
+                <div class="text-left">
+                    <Typography variant='h3' fontWeight='bold' >
                         Hello I'm Sisitha Jayawardhane
                     </Typography>
-                    <Typography variant='h6' fontWeight='bold' className='sub-profile-typography'>
+                    <Typography variant='h6' fontWeight='bold'>
                         Trainee Software Engineer | Tech Enthusiast
                     </Typography>
                 </div>
@@ -26,42 +25,42 @@ export default function Profile() {
                     </a>
                 </ListItemIcon>
             </div>
-            <div className='all_cards'>
-                <div className='left_cards'>
-                    <div className='card'>
-                        <img src="sisitha.jpg" alt="Avatar" id='profile-image' />
-                        <div className='container'>
-                            <p className='basi-details-2'>Nattandiya, Puttlam, Sri Lanka</p>
-                            <h4 className='basi-details-2'>Trainee Software Engineer</h4>
-                            <h4 className='basi-details-2'>jWare Automation Sri Lanka</h4>
+            <div class="flex flex-row justify-between">
+                <div class="w-3/12 flex flex-col">
+                    <div class="text-center w-full bg-white text-black rounded m-12 p-5 shadow-md transition duration-300">
+                        <img src="sisitha.jpg" alt="Avatar" class="rounded-full w-40 h-40" />
+                        <div class="mx-0 my-5;">
+                            <p class="text-lg my-4">Nattandiya, Puttlam, Sri Lanka</p>
+                            <h4 class="text-lg my-4">Trainee Software Engineer</h4>
+                            <h4 class="text-lg my-4">jWare Automation Sri Lanka</h4>
                         </div>
-                        <div className='quote'>
+                        <div class="text-center bg-black rounded text-white m-0 mx-5">
                             <p>If you can't explain it simply, you probably don't understand it well enough</p>
                         </div>
                     </div>
-                    <div className='card'>
+                    <div class="text-center w-full bg-white text-black rounded m-12 p-5 shadow-md transition duration-300">
                         <h3>Language Proficiency</h3>
                         <Divider />
-                        <div className='language-proficiency'>
+                        <div class="p-5">
                             <div>
                                 <p>English</p>
                                 <div class="border">
-                                    <div class="red" style={{ height: '20px', width: '80%' }}></div>
+                                    <div class="h-5 w-4/5 text-black bg-pink-500" ></div>
                                 </div>
-                                <div className='bordeor'>
+                                <div className='border'>
                                     <div class="progress"></div>
                                 </div>
                             </div>
                             <div>
                                 <p>Sinhala</p>
                                 <div class="border">
-                                    <div class="yellow" style={{ height: '20px', width: '100%' }}></div>
+                                    <div class="h-5 w-2/2 text-black bg-blue-500"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='right_card'>
+                <div class="text-left w-3/5 bg-white text-black rounded m-12 p-5 shadow-md transition duration-300">
                     <h2>About Me</h2>
                     <Divider />
                     <div className='logos'>
@@ -92,7 +91,7 @@ export default function Profile() {
                             </div>
                             <div className='details'>
                                 <h4>Current Learning Goals</h4>
-                                <p className='capsule_para'>AWS, Jenkings, TypeScript, C#, ASP.NET</p>
+                                <p className='capsule_para'>AWS, Jenkins, TypeScript, C#, ASP.NET, React Native</p>
                             </div>
                         </div>
 

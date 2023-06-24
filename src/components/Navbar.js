@@ -49,17 +49,6 @@ export default function Navbar(props) {
                     </ListItem>
                 </Link>
 
-                <Link to="/highlights" className='list-item-text'>
-                    <ListItem >
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <PieChartIcon sx={{ color: 'red' }} />
-                            </ListItemIcon>
-                            <ListItemText primary={"Highlights"} className='navbar_pages_text' />
-                        </ListItemButton>
-                    </ListItem>
-                </Link>
-
                 <Link to="/education" className='list-item-text'>
                     <ListItem >
                         <ListItemButton>
