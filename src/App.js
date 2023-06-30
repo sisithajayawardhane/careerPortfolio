@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: 'black'}}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Profile />} />

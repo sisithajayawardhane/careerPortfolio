@@ -42,7 +42,7 @@ export default function Navbar(props) {
                     <ListItem id='profile_button'>
                         <ListItemButton>
                             <ListItemIcon>
-                                <AccountCircleIcon sx={{ color: 'blue' }} />
+                                <AccountCircleIcon sx={{ color: 'purple' }} />
                             </ListItemIcon>
                             <ListItemText primary={"Profile"} className='navbar_pages_text' />
                         </ListItemButton>
@@ -75,7 +75,7 @@ export default function Navbar(props) {
                     <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
-                                <ListAltIcon sx={{ color: 'blue' }} />
+                                <ListAltIcon sx={{ color: 'purple' }} />
                             </ListItemIcon>
                             <ListItemText primary={"Portfolio"} className='navbar_pages_text' />
                         </ListItemButton>
@@ -119,7 +119,7 @@ export default function Navbar(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <div className='Navbar'>
+        <div className='Navbar' style={{ backgroundColor: 'black' }}>
             <Box sx={{ display: 'flex' }} >
                 <Toolbar>
                     <IconButton
