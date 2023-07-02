@@ -9,13 +9,13 @@ import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 
 export default function Profile() {
     return (
-        <div className='Profile' >
+        <div className='Profile' style={{ backgroundColor: 'black', minHeight: '100vh' }}>
             <div class="flex flex-row justify-between p-3 my-0 mx-8">
                 <div class="text-left">
-                    <p class="font-bold sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl">
+                    <p class="font-bold text-5xl ">
                         Hello I'm Sisitha Jayawardhane
                     </p>
-                    <p class="sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
+                    <p class="text-2xl">
                         Trainee Software Engineer | Tech Enthusiast
                     </p>
                 </div>
@@ -27,37 +27,37 @@ export default function Profile() {
             </div>
             <div class="flex flex-row justify-between ">
                 <div class="w-4/12 m-2 flex flex-col ">
-                    <div class=" w-full bg-white text-black rounded m-12 p-11 shadow-md transition duration-300">
-                        <img class="mx-auto block w-3/5 rounded-md" src="sisitha.png" alt="Avatar"  />
+                    <div class=" w-full bg-white text-black rounded-xl m-12 p-11 shadow-md transition duration-300">
+                        <img class="mx-auto block w-3/5 rounded-xl" src="sisitha.png" alt="Avatar"  />
                         <div class="mx-0 my-5">
                             <p class="text-lg my-4 text-gray-600">Nattandiya, Puttlam, Sri Lanka</p>
                             <h4 class="text-lg my-4 text-gray-600 font-bold">Trainee Software Engineer</h4>
                             <h4 class="text-lg my-4 text-gray-600 ">jWare Automation Sri Lanka</h4>
                         </div>
-                        <div class="mx-auto block bg-black rounded text-white p-5">
-                            <p>If you can't explain it simply, you probably don't understand it well enough</p>
+                        <div class="mx-auto block bg-black rounded-xl text-white p-5">
+                            <p class="font-bold">If you can't explain it simply, you probably don't understand it well enough</p>
                         </div>
                     </div>
-                    <div class="text-center w-full bg-white text-black rounded m-12 p-5 shadow-md transition duration-300">
+                    <div class="text-center w-full bg-white text-black rounded-xl m-12 p-5 shadow-md transition duration-300">
                         <h3 class="text-gray-600 font-bold">Language Proficiency</h3>
                         <Divider />
                         <div class="p-5">
                             <div class="m-2">
                                 <p class="text-gray-600 ">English</p>
-                                <div class="border">
-                                    <div class="h-5 w-4/5 text-black bg-pink-500" ></div>
+                                <div class="border rounded-md bg-gray-200">
+                                    <div class="h-5 w-4/5 text-black bg-pink-500 rounded-md" ></div>
                                 </div>
                             </div>
                             <div class="m-2">
                                 <p class="text-gray-600">Sinhala</p>
                                 <div class="border">
-                                    <div class="h-5 w-2/2 text-black bg-blue-500"></div>
+                                    <div class="h-5 w-2/2 text-black bg-blue-500 rounded-md"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-7/12 m-14 p-5 text-left bg-white text-black rounded shadow-md transition duration-300 ">
+                <div class="w-7/12 m-14 p-5 text-left bg-white text-black rounded-xl shadow-md transition duration-300 ">
                     <h2 class="text-2xl font-bold text-gray-600">About Me</h2>
                     <Divider />
                     <div className='logos'>

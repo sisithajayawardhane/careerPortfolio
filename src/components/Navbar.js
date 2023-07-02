@@ -20,6 +20,8 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import SendIcon from '@mui/icons-material/Send';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { spacing } from '@mui/system';
+
 
 
 const drawerWidth = 240;
@@ -34,17 +36,18 @@ export default function Navbar(props) {
 
     const drawer = (
         <div className='sidenav'>
-            <div className='tool_bar'>
-                <img src="sj.png" alt="SE" id='se_img'/>
+            <div className='tool_bar' >
+                <img src="sj2.png" alt="SE" id='se_img' class="pl-5"/>
             </div>
-            <List className='list'>
+            
+            <List className='list' >
                 <Link to="/" className='list-item-text' >
                     <ListItem id='profile_button'>
                         <ListItemButton>
                             <ListItemIcon>
                                 <AccountCircleIcon sx={{ color: 'purple' }} />
                             </ListItemIcon>
-                            <ListItemText primary={"Profile"} className='navbar_pages_text' />
+                            <ListItemText  primary={"Profile"} className='navbar_pages_text'/>
                         </ListItemButton>
                     </ListItem>
                 </Link>
@@ -95,7 +98,7 @@ export default function Navbar(props) {
 
             </List>
             {/* <Divider /> */}
-            <List className='list'>
+            <List className='list' sx={{ pb: '18vh' }}>
                 <ListItem >
                     <ListItemButton href='https://sisithajayawardhane.medium.com' >
                         <ListItemIcon>
@@ -119,8 +122,8 @@ export default function Navbar(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <div className='Navbar' style={{ backgroundColor: 'black' }}>
-            <Box sx={{ display: 'flex' }} >
+        <div className='Navbar' >
+            <Box sx={{ display: 'flex'}} >
                 <Toolbar>
                     <IconButton
                         color="inherit"

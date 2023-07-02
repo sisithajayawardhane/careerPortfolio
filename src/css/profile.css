@@ -46,7 +46,7 @@
     color: white;
   }
   .capsule_para {
-    @apply text-[white] bg-[black] w-3/5 p-2.5 mt-3 rounded-[5px] border-[solid];
+    @apply text-[white] bg-[black] w-3/5 p-2.5 mt-3 rounded-lg border-[solid];
   }
 
   .details {
