@@ -20,11 +20,15 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import SendIcon from '@mui/icons-material/Send';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Typography from '@mui/material/Typography';
 import { spacing } from '@mui/system';
+import styled, { keyframes } from 'styled-components';
+import { bounce, fadeIn, rubberBand, zoomIn } from 'react-animations'
 
 
 
 const drawerWidth = 240;
+const Bounce = styled.div`animation: 2s ${keyframes`${zoomIn}`} infinite`;
 
 export default function Navbar(props) {
     const { window } = props;
@@ -37,9 +41,13 @@ export default function Navbar(props) {
     const drawer = (
         <div className='sidenav'>
             <div className='tool_bar' >
-                <img src="sj2.png" alt="SE" id='se_img' class="pl-5"/>
+                <Bounce>
+                    <img src="sj2.png" alt="SE" id='se_img' class="pl-5" />
+                </Bounce>
             </div>
-            
+
+
+
             <List className='list' >
                 <Link to="/" className='list-item-text' >
                     <ListItem id='profile_button'>
@@ -47,7 +55,11 @@ export default function Navbar(props) {
                             <ListItemIcon>
                                 <AccountCircleIcon sx={{ color: 'purple' }} />
                             </ListItemIcon>
-                            <ListItemText  primary={"Profile"} className='navbar_pages_text'/>
+                            <ListItemText primary={
+                                <Typography variant="body1" style={{ fontWeight: 'bold' }}>
+                                    Profile
+                                </Typography>
+                            } className='navbar_pages_text' />
                         </ListItemButton>
                     </ListItem>
                 </Link>
@@ -58,7 +70,11 @@ export default function Navbar(props) {
                             <ListItemIcon>
                                 <AutoStoriesIcon sx={{ color: 'green' }} />
                             </ListItemIcon>
-                            <ListItemText primary={"Education"} className='navbar_pages_text' />
+                            <ListItemText primary={
+                                <Typography variant="body1" style={{ fontWeight: 'bold' }}>
+                                    Education
+                                </Typography>
+                            } className='navbar_pages_text' />
                         </ListItemButton>
                     </ListItem>
                 </Link>
@@ -69,7 +85,11 @@ export default function Navbar(props) {
                             <ListItemIcon>
                                 <BusinessCenterIcon sx={{ color: 'orange' }} />
                             </ListItemIcon>
-                            <ListItemText primary={"Experience"} className='navbar_pages_text' />
+                            <ListItemText primary={
+                                <Typography variant="body1" style={{ fontWeight: 'bold' }}>
+                                    Experience
+                                </Typography>
+                            } className='navbar_pages_text' />
                         </ListItemButton>
                     </ListItem>
                 </Link>
@@ -80,7 +100,11 @@ export default function Navbar(props) {
                             <ListItemIcon>
                                 <ListAltIcon sx={{ color: 'purple' }} />
                             </ListItemIcon>
-                            <ListItemText primary={"Portfolio"} className='navbar_pages_text' />
+                            <ListItemText primary={
+                                <Typography variant="body1" style={{ fontWeight: 'bold' }}>
+                                    Portfolio
+                                </Typography>
+                            } className='navbar_pages_text' />
                         </ListItemButton>
                     </ListItem>
                 </Link>
@@ -91,20 +115,27 @@ export default function Navbar(props) {
                             <ListItemIcon>
                                 <SendIcon sx={{ color: 'red' }} />
                             </ListItemIcon>
-                            <ListItemText primary={"Contact"} className='navbar_pages_text' />
+                            <ListItemText primary={
+                                <Typography variant="body1" style={{ fontWeight: 'bold' }}>
+                                    Contact
+                                </Typography>
+                            } className='navbar_pages_text' />
                         </ListItemButton>
                     </ListItem>
                 </Link>
 
             </List>
-            {/* <Divider /> */}
-            <List className='list' sx={{ pb: '18vh' }}>
+            <List className='list' >
                 <ListItem >
                     <ListItemButton href='https://sisithajayawardhane.medium.com' >
                         <ListItemIcon>
                             <RocketLaunchIcon sx={{ color: 'gray' }} />
                         </ListItemIcon>
-                        <ListItemText primary={"Blog"} className='navbar_pages_text' />
+                        <ListItemText primary={
+                            <Typography variant="body1" style={{ fontWeight: 'bold' }}>
+                                Blog
+                            </Typography>
+                        } className='navbar_pages_text' />
                     </ListItemButton>
                 </ListItem>
                 <ListItem id='linkedin_button'>
@@ -112,7 +143,11 @@ export default function Navbar(props) {
                         <ListItemIcon>
                             <LinkedInIcon sx={{ color: 'blue' }} />
                         </ListItemIcon>
-                        <ListItemText primary={"LinkedIn"} className='navbar_pages_text' />
+                        <ListItemText primary={
+                            <Typography variant="body1" style={{ fontWeight: 'bold' }}>
+                                Linkedin
+                            </Typography>
+                        } className='navbar_pages_text' />
                     </ListItemButton>
                 </ListItem>
             </List>
@@ -122,8 +157,8 @@ export default function Navbar(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <div className='Navbar' >
-            <Box sx={{ display: 'flex'}} >
+        <div className='Navbar' class="max-h-screen" >
+            <Box sx={{ display: 'flex' }} >
                 <Toolbar>
                     <IconButton
                         color="inherit"
