@@ -2,9 +2,9 @@ import "../css/education.css"
 
 export default function Education() {
     return (
-        <div className="Education" style={{ backgroundColor: 'black', minHeight: '100vh' }}>
-            <div className="education_cards" >
-                <div className='e-card' >
+        <div className="Education" style={{ backgroundColor: 'black',}}>
+            <div className="education_cards" class="block xl:flex" >
+                <div class='e-card'  >
                     <img src="uoklogo.png" alt="Avatar" id='school-image' />
                     <div className='uok'>
                         <div className="name-duration" class="flex justify-between p-2">
@@ -21,7 +21,7 @@ export default function Education() {
                         </div>
                         <div class="mt-3">
                             <div className="extra-curriculam" class="flex">
-                                <p class="text-xs font-bold text-blue-700 bg-gray-200 rounded-md m-1 p-1">EXECUTIVE COMMITEE</p>
+                                <p class="text-xs font-bold text-blue-700 bg-gray-200 rounded-md m-1 p-1">EXECUTIVE COMMITTEE</p>
                                 <p class="text-xs font-bold m-1 p-1">Software Engineering Students' Association UOK</p>
                             </div>
                             <div className="extra-curriculam" class="flex">
@@ -37,7 +37,7 @@ export default function Education() {
                     </div>
 
                 </div>
-                <div className='e-card'>
+                <div class='e-card [w-750px] w1200:[w-630px]'>
                     <img src="tc.png" alt="Avatar" id='school-image' />
                     <div className='tc'>
                         <div className="name-duration" class="flex justify-between p-2">
@@ -74,11 +74,11 @@ export default function Education() {
                 </div>
             </div>
 
-            <p class="text-3xl font-bold text-left">Online Certifications</p>
+            <p class="text-3xl font-bold text-center">Online Certifications</p>
 
             <div className="Certifications" class="flex flex-wrap">
                 <div className='certificate'>
-                    <img src="coursera.png" alt="Avatar" />
+                    <img src="coursera.png" alt="Avatar" class="w-[600px] mx-auto"/>
                     <p class="text-xl font-bold">React Basics By META</p>
                     <p class="text-lg p-2 text-gray-600">Coursera</p>
                     <p class="text-lg p-2 text-gray-600">Credenntail ID : AT4VKYD69PXR</p>

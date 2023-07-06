@@ -19,15 +19,15 @@ export default function Profile() {
                         Trainee Software Engineer | Tech Enthusiast
                     </p>
                 </div>
-                <ListItemIcon>
+                <ListItemIcon class="hidden w1200:block">
                     <a href='cv.pdf' download='cv.pdf'>
                         <DownloadForOfflineIcon sx={{ color: 'purple', fontSize: '80px' }} />
                     </a>
                 </ListItemIcon>
             </div>
-            <div class="flex flex-row justify-between ">
-                <div class="w-4/12 m-2 flex flex-col ">
-                    <div class=" w-full bg-white text-black rounded-xl m-12 p-11 shadow-md transition duration-300">
+            <div class="block w1200:flex flex-row justify-between ">
+                <div class=" m-2 flex flex-col ">
+                    <div class="lg:w-[750px] w1200:w-full rounded-xl m-12 p-11 bg-white text-black shadow-md transition duration-300">
                         <img class="mx-auto block w-3/5 rounded-xl" src="sisitha.png" alt="Avatar"  />
                         <div class="mx-0 my-5">
                             <p class="text-lg my-4 text-gray-600">Nattandiya, Puttlam, Sri Lanka</p>
@@ -38,30 +38,30 @@ export default function Profile() {
                             <p class="font-bold">If you can't explain it simply, you probably don't understand it well enough</p>
                         </div>
                     </div>
-                    <div class="text-center w-full bg-white text-black rounded-xl m-12 p-5 shadow-md transition duration-300">
+                    <div class="lg:w-[750px] w1200:w-full text-center bg-white text-black rounded-xl m-12 p-5 shadow-md transition duration-300">
                         <h3 class="text-gray-600 font-bold">Language Proficiency</h3>
                         <Divider />
                         <div class="p-5">
                             <div class="m-2">
                                 <p class="text-gray-600 ">English</p>
                                 <div class="border rounded-md bg-gray-200">
-                                    <div class="h-5 w-4/5 text-black bg-pink-500 rounded-md" ></div>
+                                    <div class="h-5 w-4/5 text-black bg-red-700 rounded-md" ></div>
                                 </div>
                             </div>
                             <div class="m-2">
                                 <p class="text-gray-600">Sinhala</p>
                                 <div class="border">
-                                    <div class="h-5 w-2/2 text-black bg-blue-500 rounded-md"></div>
+                                    <div class="h-5 w-2/2 text-black bg-blue-700 rounded-md"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-7/12 m-14 p-5 text-left bg-white text-black rounded-xl shadow-md transition duration-300 ">
+                <div class="lg:w-[750px] w1200:w-full m-14 p-5 text-left bg-white text-black rounded-xl shadow-md transition duration-300 ">
                     <h2 class="text-2xl font-bold text-gray-600">About Me</h2>
                     <Divider />
                     <div className='logos'>
-                        <h4 style={{ color: 'gray' }}>FIND ME ON THE INTERNET</h4>
+                        <h4 class="text-gray-500 mt-1 font-bold">FIND ME ON THE INTERNET</h4>
                         <a href="https://www.linkedin.com/in/sisitha-jayawardhane-0b5a1517b/" class="fa fa-linkedin"></a>
                         <a href="https://twitter.com/SisJay98" class="fa fa-twitter"><span className="sr-only">Twitter</span></a>
                         <a href="https://github.com/sisithajayawardhane" class="fa fa-github"></a>
