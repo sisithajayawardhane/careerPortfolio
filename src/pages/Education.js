@@ -4,7 +4,7 @@ export default function Education() {
     return (
         <div className="Education" style={{ backgroundColor: 'black',}}>
             <div className="education_cards" class="block xl:flex" >
-                <div class='lg: w-[750px] xl:w-[630px] text-center shadow-[0_4px_8px_0_rgba(0, 0, 0, 0.2)] transition-[0.3s] bg-[white] text-[black] m-[20px] p-[50px] rounded-[5px]'  >
+                <div class='lg: w-[750px] xl:w-[630px] text-center shadow-[0_4px_8px_0_rgba(0, 0, 0, 0.2)] transition-[0.3s] bg-[white] text-[black] mt-[30px] ml-[10px] mr-[10px] mb-[30px]  p-[50px] rounded-[5px]'  >
                     <img src="uoklogo.png" alt="Avatar" id='school-image' />
                     <div className='uok'>
                         <div className="name-duration" class="flex justify-between p-2">
@@ -37,7 +37,7 @@ export default function Education() {
                     </div>
 
                 </div>
-                <div class='lg: w-[750px] xl:w-[630px] text-center shadow-[0_4px_8px_0_rgba(0, 0, 0, 0.2)] transition-[0.3s] bg-[white] text-[black] m-[20px] p-[50px] rounded-[5px] [w-750px] w1200:[w-630px]'>
+                <div class='lg: w-[750px] xl:w-[630px] text-center shadow-[0_4px_8px_0_rgba(0, 0, 0, 0.2)] transition-[0.3s] bg-[white] text-[black] mt-[30px] ml-[10px] mr-[10px] mb-[30px] p-[50px] rounded-[5px] [w-750px] w1200:[w-630px]'>
                     <img src="tc.png" alt="Avatar" id='school-image' />
                     <div className='tc'>
                         <div className="name-duration" class="flex justify-between p-2">
