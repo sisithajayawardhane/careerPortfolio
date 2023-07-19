@@ -1,0 +1,3 @@
+.project {
+    @apply: w-[600px] lg: w-[350px] xl:w-[400px] text-center shadow-[0_4px_8px_0_rgba(0, 0, 0, 0.2)] transition-[0.3s] bg-[white] text-[black] m-5 p-[50px] rounded-[5px];
+}

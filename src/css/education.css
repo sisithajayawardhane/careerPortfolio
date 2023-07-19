@@ -1,14 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .education_cards {
     display: flex;
     text-align: center;
 }
 
-.e-card {
-    @apply lg:w-[750px] xl:w-[630px] text-center shadow-[0_4px_8px_0_rgba(0,0,0,0.2)] transition-[0.3s] bg-[white] text-[black] m-[50px] p-[50px] rounded-[5px];
-  }
-  .certificate {
-    @apply w-[600px] lg:w-[350px] xl:w-[400px] text-center shadow-[0_4px_8px_0_rgba(0,0,0,0.2)] transition-[0.3s]  bg-[white] text-[black] m-5 p-[50px] rounded-[5px];
-  }
+/* .e-card {
+    @apply lg: w-[750px] xl:w-[630px] text-center shadow-[0_4px_8px_0_rgba(0, 0, 0, 0.2)] transition-[0.3s] bg-[white] text-[black] m-[50px] p-[50px] rounded-[5px];
+} */
+
+/* .certificate {
+    @apply w-[600px] lg: w-[350px] xl:w-[400px] text-center shadow-[0_4px_8px_0_rgba(0, 0, 0, 0.2)] transition-[0.3s] bg-[white] text-[black] m-5 p-[50px] rounded-[5px];
+} */
 
 
 #school-image {
@@ -16,6 +21,7 @@
     margin: auto;
 
 }
+
 .fa-link {
     font-size: 20px;
 }

@@ -12,7 +12,7 @@
   }
   
   .fa-twitter {
-    background: #55ACEE;
+    background: black;
     color: white;
   }
   
@@ -22,7 +22,7 @@
   }
   
   .fa-linkedin {
-    background: #007bb5;
+    background: black;
     color: white;
   }
   
@@ -32,17 +32,17 @@
   }
   
   .medium {
-    background: rgb(200, 160, 14);
+    background: black;
     color: white;
   }
   
   .hackerrank {
-    background: rgb(10, 171, 10);
+    background: black;
     color: white;
   }
   
   .stackoverflow {
-    background: red;
+    background: black;
     color: white;
   }
   .capsule_para {

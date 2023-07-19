@@ -39,21 +39,22 @@ export default function Navbar(props) {
     };
 
     const drawer = (
-        <div className='sidenav'>
-            <div className='tool_bar' >
-                <Bounce>
-                    <img src="sj2.png" alt="SE" id='se_img' class="pl-5" />
-                </Bounce>
+        <div className='sidenav' >
+            <div className='tool_bar' class="bg-white" >
+                {/* <Bounce>
+                    <img src="sj3.png" alt="SE" id='se_img' class="pl-5 text-black bg-white" />
+                </Bounce> */}
+                <img src="sj3.png" alt="SE" id='se_img' class="pl-5 text-black bg-white" />
             </div>
-            <List className='list' >
+            <List className='list1' >
                 <Link to="/" className='list-item-text' >
                     <ListItem id='profile_button'>
                         <ListItemButton>
                             <ListItemIcon>
-                                <AccountCircleIcon sx={{ color: 'purple' }} />
+                                <AccountCircleIcon sx={{ color: 'black' }} />
                             </ListItemIcon>
                             <ListItemText primary={
-                                <Typography variant="body1" class='font-lato font-semibold' style={{ fontSize: '20px', }}>
+                                <Typography variant="body1" class='font-lato font-semibold text-black' style={{ fontSize: '20px', }}>
                                     Profile
                                 </Typography>
                             } className='navbar_pages_text' />
@@ -65,10 +66,10 @@ export default function Navbar(props) {
                     <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
-                                <AutoStoriesIcon sx={{ color: 'green' }} />
+                                <AutoStoriesIcon sx={{ color: 'black' }} />
                             </ListItemIcon>
                             <ListItemText primary={
-                                <Typography variant="body1" class='font-lato font-semibold' style={{ fontSize: '20px' }}>
+                                <Typography variant="body1" class='font-lato font-semibold text-black' style={{ fontSize: '20px' }}>
                                     Education
                                 </Typography>
                             } className='navbar_pages_text' />
@@ -80,10 +81,10 @@ export default function Navbar(props) {
                     <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
-                                <BusinessCenterIcon sx={{ color: 'orange' }} />
+                                <BusinessCenterIcon sx={{ color: 'black' }} />
                             </ListItemIcon>
                             <ListItemText primary={
-                                <Typography variant="body1" class='font-lato font-semibold' style={{ fontSize: '20px' }}>
+                                <Typography variant="body1" class='font-lato font-semibold text-black' style={{ fontSize: '20px' }}>
                                     Experience
                                 </Typography>
                             } className='navbar_pages_text' />
@@ -95,10 +96,10 @@ export default function Navbar(props) {
                     <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
-                                <ListAltIcon sx={{ color: 'purple' }} />
+                                <ListAltIcon sx={{ color: 'black' }} />
                             </ListItemIcon>
                             <ListItemText primary={
-                                <Typography variant="body1" class='font-lato font-semibold' style={{ fontSize: '20px' }}>
+                                <Typography variant="body1" class='font-lato font-semibold text-black' style={{ fontSize: '20px' }}>
                                     Portfolio
                                 </Typography>
                             } className='navbar_pages_text' />
@@ -110,10 +111,10 @@ export default function Navbar(props) {
                     <ListItem >
                         <ListItemButton>
                             <ListItemIcon>
-                                <SendIcon sx={{ color: 'red' }} />
+                                <SendIcon sx={{ color: 'black' }} />
                             </ListItemIcon>
                             <ListItemText primary={
-                                <Typography variant="body1" class='font-lato font-semibold' style={{ fontSize: '20px' }}>
+                                <Typography variant="body1" class='font-lato font-semibold text-black' style={{ fontSize: '20px' }}>
                                     Contact
                                 </Typography>
                             } className='navbar_pages_text' />
@@ -122,14 +123,14 @@ export default function Navbar(props) {
                 </Link>
 
             </List>
-            <List className='list' >
+            <List className='list2' >
                 <ListItem >
                     <ListItemButton href='https://sisithajayawardhane.medium.com' >
                         <ListItemIcon>
-                            <RocketLaunchIcon sx={{ color: 'gray' }} />
+                            <RocketLaunchIcon sx={{ color: 'black' }} />
                         </ListItemIcon>
                         <ListItemText primary={
-                            <Typography variant="body1" class='font-lato font-semibold' style={{ fontSize: '20px' }}>
+                            <Typography variant="body1" class='font-lato font-semibold text-black' style={{ fontSize: '20px' }}>
                                 Blog
                             </Typography>
                         } className='navbar_pages_text' />
@@ -138,10 +139,10 @@ export default function Navbar(props) {
                 <ListItem id='linkedin_button'>
                     <ListItemButton href='https://www.linkedin.com/in/sisitha-jayawardhane-0b5a1517b/'>
                         <ListItemIcon>
-                            <LinkedInIcon sx={{ color: 'blue' }} />
+                            <LinkedInIcon sx={{ color: 'black' }} />
                         </ListItemIcon>
                         <ListItemText primary={
-                            <Typography variant="body1" class='font-lato font-semibold' style={{ fontSize: '20px' }}>
+                            <Typography variant="body1" class='font-lato font-semibold text-black' style={{ fontSize: '20px' }}>
                                 Linkedin
                             </Typography>
                         } className='navbar_pages_text' />
@@ -154,7 +155,7 @@ export default function Navbar(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <div className='Navbar'>
+        <div className='Navbar' >
             <Box sx={{ display: 'flex' }} >
                 <Toolbar>
                     <IconButton
